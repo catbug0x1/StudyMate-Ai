@@ -1,0 +1,7 @@
+{
+  "name": "StudyMate AI",
+  "description": "An intelligent tutor system that transforms academic materials into personalized study guides, including summaries, flashcards, quizzes, and study plans, powered by AI.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

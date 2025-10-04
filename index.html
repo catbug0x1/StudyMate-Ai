@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyMate AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'gruvbox-dark-bg': '#32302f',
+              'gruvbox-dark-bg-soft': '#3c3836',
+              'gruvbox-dark-bg-hover': '#504945',
+              'gruvbox-dark-fg': '#d4be98',
+              'gruvbox-red-dark': '#e67e81',
+              'gruvbox-green-dark': '#b3be8a',
+              'gruvbox-yellow-dark': '#e0c086',
+              'gruvbox-blue-dark': '#8ab8a8',
+              'gruvbox-purple-dark': '#d696ac',
+              'gruvbox-aqua-dark': '#94ba90',
+              'gruvbox-gray-dark': '#928374',
+              'gruvbox-orange-dark': '#e99a71',
+              'gruvbox-dark-border': '#504945',
+              'gruvbox-dark-red-dim': '#6b4d4d',
+              'gruvbox-dark-green-dim': '#61664d',
+              'gruvbox-dark-yellow-dim': '#6b5e4a',
+              'gruvbox-dark-border-yellow': '#89724d',
+
+              'gruvbox-light-bg': '#f9f5d7',
+              'gruvbox-light-bg-soft': '#f2e5bc',
+              'gruvbox-light-bg-hover': '#ebdbb2',
+              'gruvbox-light-fg': '#504945',
+              'gruvbox-red-light': '#c86f6f',
+              'gruvbox-green': '#848d54',
+              'gruvbox-yellow': '#b4854f',
+              'gruvbox-blue': '#6a8f98',
+              'gruvbox-purple': '#a68297',
+              'gruvbox-aqua': '#73997b',
+              'gruvbox-gray-light': '#7c6f64',
+              'gruvbox-orange': '#c07945',
+              'gruvbox-light-border': '#d5c4a1',
+              'gruvbox-light-red-dim': '#fce9e5',
+              'gruvbox-light-green-dim': '#f5f4eb',
+              'gruvbox-light-yellow-dim': '#fbf3e0',
+              'gruvbox-light-border-yellow': '#e9d7b0',
+            },
+            fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+<!-- KaTeX for LaTeX rendering -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0KOVEMcApdbeLaiEcDNKl<div>T9blcnYCzJvstl8rT2HNXYUStbfmbFuRcw" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIOOTenD6A6+HXddEVgBZIJXT8IMLGqluiLBXjowrMVjd2lkzbc" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURPl3deQkWMJDN2prCo0HjHSzlCsD1DvOKOO1iL8TATxHykkCJIvUA" crossorigin="anonymous"></script>
+
+<!-- Prism.js for code syntax highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js" integrity="sha512-9khQRAUBYEJDCDVP2owVvicVOPKMMokEuTQflkDNiAL2oLMRgjGuK1WhIZ2LMouG8G/IBGnsC9ILUBKNMEdwYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-S_2_LMwU2OaEYTCc4GAA9aprp5c9VBE3bWJSdpjZu8zhOKHn3o2CStOr5sBvcoXWjIqHaD1M0vQJ2hJ+3w1Dzw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
